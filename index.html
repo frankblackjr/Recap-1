@@ -6,11 +6,35 @@
   <title>Recap</title>
 
   <style media="screen">
-    table {
-      width: 300px;
+    div#c {
+      display: block;
+      width: 50%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    table, th, td {
+    table {
+      float: left;
+      margin-left: 30px;
+      width: 150px;
+    }
+
+    th {
+      background-color: white;
+      color: black;
+    }
+
+    tr:nth-child(even) {
+      background-color: #eee;
+    }
+
+    tr:nth-child(odd) {
+      background-color: black;
+      color: white;
+    }
+
+    table,th,td {
       border: 1px solid black;
       border-collapse: collapse;
     }
@@ -98,46 +122,115 @@
       tractavissent. Laborum ut tamen, eu malis eruditionem.</p>
     <hr style="clear: both;">
     <br>
-    <table>
-      <caption>Descriptions</caption>
-      <tr>
-        <th>Name</th>
-        <th>Age</th>
-        <th>Height</th>
-      </tr>
-      <tr>
-        <td>Gabe</td>
-        <td>22</td>
-        <td>6'7"</td>
-      </tr>
-      <tr>
-        <td>Ashley</td>
-        <td>19</td>
-        <td>5'0"</td>
-      </tr>
-      <tr>
-        <td>Mr. Poopy Butthole</td>
-        <td>37</td>
-        <td>3'7"</td>
-      </tr>
-    </table>
+    <div id="c">
+      <table>
+        <caption>Descriptions</caption>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Height</th>
+        </tr>
+        <tr>
+          <td>Gabe</td>
+          <td>22</td>
+          <td>6'7"</td>
+        </tr>
+        <tr>
+          <td>Ashley</td>
+          <td>19</td>
+          <td>5'0"</td>
+        </tr>
+        <tr>
+          <td>Mr. Poopy Butthole</td>
+          <td>37</td>
+          <td>3'7"</td>
+        </tr>
+      </table>
+      <br>
+      <table>
+        <tr>
+          <th colspan="3">example</th>
+        </tr>
+        <tr>
+          <td rowspan="4">Lorem</td>
+          <td>lorem</td>
+          <td>lorem</td>
+        </tr>
+        <tr>
+          <td>lorem</td>
+          <td>ipsum</td>
+        </tr>
+        <tr>
+          <td>lorem</td>
+          <td>ipsum</td>
+        </tr>
+        <tr>
+          <td>lorem</td>
+          <td>ipsum</td>
+        </tr>
+      </table>
+    </div>
     <br>
-
-    <table>
-      <tr>
-        <th colspan="3">example</th>
-      </tr>
-      <tr>
-        <td rowspan="2">lorem</td>
-        <td>lorem</td>
-        <td>lorem</td>
-      </tr>
-      <tr>
-        <td>lorem</td>
-        <td>lorem</td>
-      </tr>
-    </table>
-
+    <br>
+    <hr style="clear: both;">
+    <ul style="list-style-type: disc">
+      <li>Lo</li>
+      <li>Rem</li>
+      <li>Ip</li>
+      <li>Sum</li>
+    </ul>
+    <ul style="list-style-type: square">
+      <li>Lo</li>
+      <li>Rem</li>
+      <li>Ip</li>
+      <li>Sum</li>
+    </ul>
+    <ul style="list-style-type: circle">
+      <li>Lo</li>
+      <li>Rem</li>
+      <li>Ip</li>
+      <li>Sum</li>
+    </ul>
+    <ol type="1">
+      <li>Lo</li>
+      <li>Rem</li>
+      <li>Ip</li>
+      <li>Sum</li>
+    </ol>
+    <ol type="A">
+      <li>Lo</li>
+      <li>Rem</li>
+      <li>Ip</li>
+      <li>Sum</li>
+    </ol>
+    <ol type="a">
+      <li>Lo</li>
+      <li>Rem</li>
+      <li>Ip</li>
+      <li>Sum</li>
+    </ol>
+    <ol type="I">
+      <li>Lo</li>
+      <li>Rem</li>
+      <li>Ip</li>
+      <li>Sum</li>
+    </ol>
+    <ol type="i">
+      <li>Lo</li>
+      <li>Rem</li>
+      <li>Ip</li>
+      <li>Sum</li>
+    </ol>
+    <ol start="55">
+      <li>Lo</li>
+      <li>Rem</li>
+      <li>Ip</li>
+      <li>Sum</li>
+    </ol>
+    <dl>
+      <dt>Ass</dt>
+      <dd>Asses are Asses ass ass</dd>
+    </dl>
   </div>
 </body>
 
